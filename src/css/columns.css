@@ -1,3 +1,11 @@
+body {
+    margin: 10px;
+}
+
+h2, p {
+    text-align: center;
+}
+
 .container {
     overflow-y: auto;
 }
