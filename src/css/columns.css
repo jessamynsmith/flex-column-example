@@ -1,0 +1,40 @@
+.container {
+    overflow-y: auto;
+}
+
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    margin: 2px;
+    max-width: 100%;
+}
+
+.items .item {
+    flex: auto;
+    box-sizing: border-box;
+    background: #e0ddd5;
+    color: #171e42;
+    padding: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 667px) {
+    .item {
+        width: 97%;
+    }
+}
+
+@media only screen and (min-width: 668px) and (max-width: 1024px) {
+    .item {
+        width: 48%;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .item {
+        width: 32%;
+    }
+}
